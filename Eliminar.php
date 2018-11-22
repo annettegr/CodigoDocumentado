@@ -52,7 +52,7 @@
     //VERIFICA SI LA BANDERA DE CONSULTA ESTÁ ACTIVA Y SI ES ASÍ, REDIRIGE A LA PÁGINA DESEADA
     if($banderaconsulta==TRUE){
     ECHO "REDIRIGIENDO PÁGINA POST ELIMINACIÓN <BR>";
-        HEADER("Refresh:3 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
+        HEADER("Refresh:0 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
 
     }else{
     //SI NO SE EJECUTÓ CORRECTAMENTE, MANDA MENSAJE DE ERROR

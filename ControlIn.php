@@ -52,11 +52,7 @@
     ECHO "EJECUTANDO CONSULTA";
     ECHO "<BR>";
     //SI ES EXITOSA, SE EJECUTARÁ LA CONSULTA
-        if (!isset($_POST['estatus'])) {
-            $estatus="of";
-        }else{
-            $estatus="on";
-        }
+
     $query= "INSERT INTO clientes (idCliente, nombre,edad, email, estatus) VALUES (NULL,'".$nombre."', '".$edad."','".$email."', '".$estatus."')";
     ECHO $query."<BR>";
 
@@ -70,7 +66,7 @@
     $resultado= mysqli_query($conexion, $query);
     if($resultado){
     ECHO "INSERCIÓN EXITOSA </BR>";
-    HEADER("Refresh:5 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
+    HEADER("Refresh:0 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
 
     }else {
     //SI NO SE TIENE LA CONEXION A LA BASE DE DATOS O EL QUERY ESTÁ MAL, NO SE INSERTA Y MANDA MENSAJE DE ERROR

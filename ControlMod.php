@@ -62,7 +62,7 @@
     $resultado= mysqli_query($conexion, $query);
     if($resultado){
     ECHO "INSERCIÓN EXITOSA </BR>";
-    HEADER("Refresh:3 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
+    HEADER("Refresh:0 url=http://localhost:300/PRUEBA_KROW/Impresion.php");
 
     }else {
     //SI NO SE TIENE LA CONEXION A LA BASE DE DATOS O EL QUERY ESTÁ MAL, NO SE INSERTA Y MANDA MENSAJE DE ERROR
